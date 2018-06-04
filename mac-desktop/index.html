@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Desktop</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+	  <style></style>
+	  
+	  
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+  	$(".draggable").draggable();
+  });
+  $(function() {
+  	$(".modal-window").draggable();
+  });
+  
+
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+	  </script>
+	  
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active"></a>
+		<div class="dropdown">
+			<button class="dropbtn">Ryan Scheuer 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Resume PDF</a>
+			    <a href="#">Portfolio PDF</a>
+			    <a href="#">Sauce.design</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Design 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">PIMA App Design</a>
+			    <a href="#">Logos &amp Branding</a>
+			    <a href="#">Type Design / Free Fonts</a>
+			    <a href="#">Digital Media</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Code 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Mac Site</a>
+			    <a href="#">AR iOS App</a>
+			    <a href="#">Creative Coding</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Contact 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Instagram</a>
+			    <a href="#">Email</a>
+			    <a href="#">Tumblr</a>
+			</div>
+		</div>
+		<a href="#open-modal">About</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+		  
+		 
+	
+	<div class="section group">
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/1.jpg" alt="" /> </a></div>
+				
+				<p class="filename">piicnic.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/2.jpg" alt="" /> </a></div>
+				
+				<p class="filename">trees.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/3.jpg" alt="" /> </a></div>
+				
+				<p class="filename">city.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/4.jpg" alt="" /> </a></div>
+				
+				<p class="filename">SUNSET.jpg</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section group">
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/5.jpg" alt="" /> </a></div>
+				<p class="filename">shower.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/6.jpg" alt="" /> </a></div>
+				
+				<p class="filename">lake.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/7.jpg" alt="" /> </a></div>
+				<p class="filename">double.jpg</p>
+			</div>
+		</div>
+		
+		<div class="col span_1_of_4">
+			<div class="draggable">
+				<div class="icon-box"><a href="#">
+				<img class="thumb" src="img/8.jpg" alt="" /> </a></div>
+				
+				<p class="filename">0cean.jpg</p>
+			</div>
+		</div>
+	</div>
+	
+	<!--<div class="window">
+		<div class="windowFrame">
+			<div class="windowControls">
+			</div>
+			Title
+		</div>
+		<div class="windowsContent">
+		</div>
+	</div>-->
+	
+	<div id="open-modal" class="modal-window">
+			<div>
+				<div class="modal-close">
+					<a href="#modal-close" class="closeButton" title="Close"></a>
+					<p class="windowTitle">About</p>
+					<!--<span style="margin-bottom: 10px; margin-top: 10px;">Test</span>-->
+				</div>
+				<div class="windowContent">
+					<!--<h1>About</h1>-->
+					<div>
+						<p><b>Ryan Scheuer</b> is a student and designer.  </p>
+						<p>He works as a <b>UX Design</b> Intern for QVC.</p>
+						<p>Interest include block printing, making furniture, and espresso.</p>
+						<p><i>This website is under construction.</i></p>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	
+	 
+	 <!--<script src='js/main.js'></script>-->
+</body>
+</html>
